@@ -1,0 +1,41 @@
+<!-- explain the z-index , with a code example .
+
+The `z-index` property in CSS specifies the stack order of an element. An element with a greater stack order is always in front of an element with a lower stack order¹². The `z-index` property only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements)¹.
+
+Here's an example of how `z-index` can be used in CSS: -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+#box1 {
+  background-color: red;
+  left: 50px;
+  top: 50px;
+  z-index: 1;
+}
+
+#box2 {
+  background-color: green;
+  left: 100px;
+  top: 100px;
+  z-index: 2;
+}
+</style>
+</head>
+<body>
+
+<div id="box1" class="box"></div>
+<div id="box2" class="box"></div>
+
+</body>
+</html>
+
+

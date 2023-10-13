@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ 
+.box {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+#boxA {
+  background-color: red;
+  left: 200px;
+  top: 200px;
+}
+
+#boxB {
+  background-color: green;
+  left: calc(200px + 25px - 30px);
+  top: calc(200px + 25px - 30px);
+}
+
+#boxC {
+  background-color: blue;
+  left: calc(200px + 25px + 30px);
+  top: calc(200px + 25px - 30px);
+}
+
+#boxD {
+  background-color: yellow;
+  left: calc(200px + 25px - 30px);
+  top: calc(200px + 25px + 30px);
+}
+
+#boxE {
+  background-color: purple;
+  left: calc(200px + 25px + 30px);
+  top: calc(200px + 25px + 30px);
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div id="boxA" class="box"></div>
+<div id="boxB" class="box"></div>
+<div id="boxC" class="box"></div>
+<div id="boxD" class="box"></div>
+<div id="boxE" class="box"></div>
+</div>
+
+</body>
+</html>
